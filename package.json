@@ -1,0 +1,66 @@
+{
+	"name": "my-webpack-project",
+	"version": "1.0.1",
+	"description": "My webpack project",
+	"main": "./src/index.js",
+	"repository": "https://github.com/Tryd0g0lik/dom_netologe.git",
+	"author": "Tryd0g0lik <work80@mail.ru>",
+	"license": "MIT",
+	"devDependencies": {
+		"@babel/cli": "^7.21.5",
+		"@babel/core": "^7.21.8",
+		"@babel/plugin-proposal-class-properties": "^7.18.6",
+		"@babel/preset-env": "^7.21.5",
+		"@types/node": "^20.2.4",
+		"@types/webpack": "^5.28.1",
+		"@typescript-eslint/eslint-plugin": "^5.43.0",
+		"@webpack-cli/generators": "^3.0.4",
+		"babel-jest": "^29.5.0",
+		"babel-loader": "^9.1.2",
+		"browserslist": "^4.21.5",
+		"copy-webpack-plugin": "^11.0.0",
+		"css-loader": "^6.8.1",
+		"eslint": "^8.0.1",
+		"eslint-config-airbnb-base": "^15.0.0",
+		"eslint-config-standard-with-typescript": "^34.0.1",
+		"eslint-plugin-import": "^2.27.5",
+		"eslint-plugin-n": "^15.0.0",
+		"eslint-plugin-promise": "^6.0.0",
+		"eslint-webpack-plugin": "^4.0.1",
+		"html-loader": "^4.2.0",
+		"html-webpack-plugin": "^5.5.3",
+		"husky": "^8.0.3",
+		"imagemin-webp-webpack-plugin": "^3.3.6",
+		"jest": "^29.5.0",
+		"mini-css-extract-plugin": "^2.7.6",
+		"postcss-loader": "^7.3.3",
+		"prettier": "^2.8.8",
+		"ts-loader": "^9.4.3",
+		"ts-node": "^10.9.1",
+		"tsconfig-paths": "^4.2.0",
+		"tsconfig-paths-webpack-plugin": "^4.0.1",
+		"typescript": "^5.0.4",
+		"webpack": "^5.83.1",
+		"webpack-cli": "^5.1.1",
+		"webpack-dev-server": "^4.15.0",
+		"webpack-merge": "^5.8.0"
+	},
+	"scripts": {
+		"start": "webpack --config ./webpack.dev.js",
+		"build": "webpack --config ./webpack.prod.js",
+		"watch": "webpack --watch",
+		"serve": "webpack serve",
+		"lint": "eslint",
+		"prepare": "husky install",
+		"husk": "yarn run prepare",
+		"pushing": "git push origin master"
+	},
+	"dependencies": {
+		"cross-env": "^7.0.3"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "yarn run start"
+		}
+	}
+}

@@ -1,0 +1,25 @@
+body {
+	height: 100vh;
+}
+
+.table {
+	display: flex;
+	flex-wrap: wrap;
+	width: 555px;
+}
+
+.td {
+
+	border: 1px solid #cdd
+}
+
+.td,
+.td img {
+	height: 122px;
+	width: 122px;
+}
+
+.td.active {
+	background: url('../pic/goblin.png') no-repeat left top;
+
+}
