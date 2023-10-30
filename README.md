@@ -1,3 +1,6 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/j0khiapxc9d22g1y?svg=true)](https://ci.appveyor.com/project/finchik/dom-netologe-g28hn)
+https://finchik.github.io/dom_netologe/index.html
+
 # Домашнее задание к занятию "3.Обработка событий"
 
 Правила сдачи задания:
